@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Detalle Comic</title>
+		<link rel="stylesheet" type="text/css" href="/css/estilos.css"></link>
+		<meta charset="UTF-8"></meta>
+	</head>
+
+	<body>
+				<div class="tarjeta-usuario">
+			<label>Nombre: </label><label th:text="${nombre}"></label><br></br>
+			<label>Autor:</label><label th:text="${autor}"></label><br></br>
+			<label>Editorial:</label><label th:text="${editorial}">true</label><br></br>
+			<label>Genero:</label><label th:text="${genero}">true</label><br></br>
+			<label>Resumen:</label><label th:text="${resumen}">true</label><br></br>
+			
+			<a href="/listadoComicsAdmin">Volver a la lista</a>
+		</div>
+	</body>
+
+</html>

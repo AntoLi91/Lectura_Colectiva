@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Lectura Colectiva</title>
+<link rel="stylesheet" type="text/css" href="/css/estilos.css"></link>
+<meta charset="UTF-8"></meta>
+<meta charset="utf-8"></meta>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+<meta name="description" content=""></meta>
+<meta name="author" content=""></meta>
+<title>Espacio de Intercambio Cultural</title>
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
+<!-- Custom styles for this template -->
+<link href="css/shop-homepage.css" rel="stylesheet"></link>
+</head>
+
+<body>
+
+			<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-secondary bg-secondary text-white fixed-top">
+		<div class="container">
+			<a class="btn btn-secondary btn-lg" href="/IndexInvitado">Logout</a>
+			<h2><a class="text-monospace">Registro Administrador</a></h2>
+			<a class="btn btn-secondary btn-lg"  href="/listadoComicsAdmin">Buscar</a>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+		</div>
+		</div>
+	</nav>
+	<!-- Page Content -->
+<br>
+<h3><p class="text-monospace">Completa los campos:</p></h3>
+</br>
+	
+	
+	<form action="/insertar-comicsAdmin" method="POST">
+	<div class="shadow-lg p-3 mb-5 bg-white rounded">	
+	
+	<br><p class="text-monospace">Nombre del libro: </p>
+	<input type="text" class="form-control" name="nombre" ></input></br>
+
+	<br><p class="text-monospace">Autor: </p>
+	<input type="text" class="form-control" name="autor" ></input></br>
+	
+	<br><p class="text-monospace">Editorial: </p>
+	<input type="text" class="form-control" name="editorial"></input></br>
+	 
+	<br><p class="text-monospace">Genero: </p>
+	<input type="text" class="form-control" name="genero"></input></br>
+	 	 
+	 
+	 <br><p class="text-monospace">Resumen:</p></br>
+	 <div class="form-group">
+   <textarea class="form-control" name="resumen" rows="3"></textarea>
+  </div>
+	
+	
+	
+	<center><button type="submit" class="btn btn-outline-dark">Cargar Datos </button></center>
+	</div>
+
+	
+
+		
+	</form>
+			
+</body>
+</html>
+
+
+

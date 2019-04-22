@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Lectura Colectiva</title>
+<link rel="stylesheet" type="text/css" href="/css/estilos.css"></link>
+<meta charset="UTF-8"></meta>
+<meta charset="utf-8"></meta>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+<meta name="description" content=""></meta>
+<meta name="author" content=""></meta>
+<title>Espacio de Intercambio Cultural</title>
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
+<!-- Custom styles for this template -->
+<link href="css/shop-homepage.css" rel="stylesheet"></link>
+</head>
+
+<body>
+
+			<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white fixed-top">
+		<div class="container">
+			<a class="btn btn-secondary btn-sm" href="/loginUsuarioCreado">Soy Usuario</a>
+			
+			<h2><a class="text-monospace">Inicio Administrador</a></h2>
+			
+			<a class="btn btn-secondary btn-sm" href="/formulario">Crear usuario</a>
+			
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+		</div>
+		</div>
+	</nav>
+	<!-- Page Content -->
+
+
+   <form action="/procesar-loginAdmin" method="POST">
+           <center><br><label>Nombre</label></br></center> 
+            <center> <input class="formregister" type="text" name="nombre" placeholder="User..." th:value="${usuarioPreCargado}"></input></center> 
+            <center> <br><label>Password</label></br></center> 
+            <center> <input class="formregister" type="password" name="contrasenia" placeholder="contraseña..."></input></center> 
+            
+       	
+             <br>
+<center><button type="submit" class="btn btn-outline-dark">Ingresar</button></center></br>
+           
+            
+        </form>
+
+
+<a  href="/IndexInvitado">Volver al Inicio</a>
+
+
+	
+
+		
+		
+</body>
+</html>
+

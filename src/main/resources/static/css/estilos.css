@@ -1,0 +1,14 @@
+.tarjeta-usuario {
+	border: 2px solid black;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+.tarjeta-usuario:hover {
+	background-color: #efefcf;	
+}
+
+.seleccionada {
+	background-color: #cbcbff;
+}

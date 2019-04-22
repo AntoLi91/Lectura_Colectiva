@@ -1,0 +1,52 @@
+<<!doctype html>
+<html lang="en">
+<head>
+<title>Registro Stark</title>
+<link rel="stylesheet" type="text/css" href="/css/estilos.css"></link>
+<meta charset="UTF-8"></meta>
+<meta charset="utf-8"></meta>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+<meta name="description" content=""></meta>
+<meta name="author" content=""></meta>
+<title>Comics Shop Stark</title>
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
+<!-- Custom styles for this template -->
+<link href="css/shop-homepage.css" rel="stylesheet"></link>
+</head>
+
+<body>
+
+		<h1>Registrar:</h1>
+
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="/IndexInvitado">Volver</a>
+			<a class="navbar-brand" href="/listadoComicsUsuario">Buscar</a>
+			
+		
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Page Content -->
+
+	<center><h2>Almacenar un Comic:</h2></center>
+	<div class="tarjeta-usuario" th:each="comics:${listadoComicsAdmin}"><span class="border">
+	<form action="/insertar-comicsAdmin" method="POST">
+		<input type="text" name="nombre" placeholder="Nombre "></input> 
+		<input type="text" name="autor" placeholder="Autor"></input>
+		<input type="text" name="editorial" placeholder="Editorial"></input> 
+		<input type="submit"></input></div>
+	</form>
+			
+</body>
+</html>
+
+
+
